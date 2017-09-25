@@ -46,7 +46,6 @@
 		83C73F271C326BD600FFC730 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC50F2CC0DF9183600E4AAAE /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83C73F281C326BD600FFC730 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E4EB713B31188005F9210 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83C73F2A1C326CE800FFC730 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C73F291C326CE800FFC730 /* libsqlite3.tbd */; };
-		83C73F2C1C326CF400FFC730 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C73F2B1C326CF400FFC730 /* libsqlite3.tbd */; };
 		83C73F2F1C326D2F00FFC730 /* FMDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83C73F0B1C326ADA00FFC730 /* FMDB.framework */; };
 		8DD76F9C0486AA7600D96B5E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08FB779EFE84155DC02AAC07 /* Foundation.framework */; };
 		8DD76F9F0486AA7600D96B5E /* fmdb.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6859EA3029092ED04C91782 /* fmdb.1 */; };
@@ -81,6 +80,19 @@
 		EE42910812B42FCC0088BD94 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
 		EE42910912B42FD00088BD94 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBF0A13E34D00A6D3E3 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EE42910A12B42FD20088BD94 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
+		FE87912D1F793F4A0084D8C9 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EBB0A13E34D00A6D3E3 /* FMDatabase.m */; };
+		FE87912E1F793F4E0084D8C9 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */; };
+		FE87912F1F793F510084D8C9 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = CC47A00E148581E9002CCDAB /* FMDatabaseQueue.m */; };
+		FE8791301F793F540084D8C9 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CC50F2CB0DF9183600E4AAAE /* FMDatabaseAdditions.m */; };
+		FE8791311F793F570084D8C9 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E4EB813B31188005F9210 /* FMDatabasePool.m */; };
+		FE8791331F793F660084D8C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE8791321F793F660084D8C9 /* libsqlite3.tbd */; };
+		FE8791341F793FAD0084D8C9 /* FMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 8314AF3218CD73D600EC0E25 /* FMDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8791351F793FAD0084D8C9 /* FMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBA0A13E34D00A6D3E3 /* FMDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8791361F793FAD0084D8C9 /* FMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = CCC24EBF0A13E34D00A6D3E3 /* FMResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8791371F793FAD0084D8C9 /* FMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = CC47A00D148581E9002CCDAB /* FMDatabaseQueue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8791381F793FAD0084D8C9 /* FMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = CC50F2CC0DF9183600E4AAAE /* FMDatabaseAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE8791391F793FAD0084D8C9 /* FMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = CC9E4EB713B31188005F9210 /* FMDatabasePool.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FE87913F1F7940CF0084D8C9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = FE87913E1F7940CF0084D8C9 /* libsqlite3.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -169,6 +181,11 @@
 		CCC24EC00A13E34D00A6D3E3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FMResultSet.m; path = src/fmdb/FMResultSet.m; sourceTree = SOURCE_ROOT; };
 		D4A740A11A7046330058EBEE /* FMDatabaseFTS3WithModuleNameTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseFTS3WithModuleNameTests.m; sourceTree = "<group>"; };
 		EE4290EF12B42F870088BD94 /* libFMDB.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libFMDB.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8791251F793EFE0084D8C9 /* FMDB_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FMDB_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE8791271F793EFE0084D8C9 /* FMDB_watchOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDB_watchOS.h; sourceTree = "<group>"; };
+		FE8791281F793EFE0084D8C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FE8791321F793F660084D8C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS4.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
+		FE87913E1F7940CF0084D8C9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.0.sdk/usr/lib/libsqlite3.tbd; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,7 +201,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83C73F2C1C326CF400FFC730 /* libsqlite3.tbd in Frameworks */,
+				FE87913F1F7940CF0084D8C9 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +239,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FE8791211F793EFE0084D8C9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8791331F793F660084D8C9 /* libsqlite3.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -233,6 +258,7 @@
 				08FB7795FE84155DC02AAC07 /* Source */,
 				08FB779DFE84155DC02AAC07 /* External Frameworks and Libraries */,
 				BF5D041A18416BB2008C5AA9 /* Tests */,
+				FE8791261F793EFE0084D8C9 /* FMDB watchOS */,
 				BF5D041718416BB2008C5AA9 /* Frameworks */,
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 			);
@@ -268,6 +294,7 @@
 				6290CBB5188FE836009790F8 /* libFMDB-IOS.a */,
 				83C73EFE1C326AB000FFC730 /* FMDB.framework */,
 				83C73F0B1C326ADA00FFC730 /* FMDB.framework */,
+				FE8791251F793EFE0084D8C9 /* FMDB_watchOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,6 +353,8 @@
 			children = (
 				83C73F2B1C326CF400FFC730 /* libsqlite3.tbd */,
 				83C73F291C326CE800FFC730 /* libsqlite3.tbd */,
+				FE8791321F793F660084D8C9 /* libsqlite3.tbd */,
+				FE87913E1F7940CF0084D8C9 /* libsqlite3.tbd */,
 				BF5D041818416BB2008C5AA9 /* XCTest.framework */,
 				6290CBB6188FE836009790F8 /* Foundation.framework */,
 				6290CBC6188FE837009790F8 /* UIKit.framework */,
@@ -381,6 +410,15 @@
 			name = "optional extras";
 			sourceTree = "<group>";
 		};
+		FE8791261F793EFE0084D8C9 /* FMDB watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				FE8791271F793EFE0084D8C9 /* FMDB_watchOS.h */,
+				FE8791281F793EFE0084D8C9 /* Info.plist */,
+			);
+			path = "FMDB watchOS";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -433,6 +471,19 @@
 				8314AF3318CD73D600EC0E25 /* FMDB.h in Headers */,
 				CC9E4EBA13B31188005F9210 /* FMDatabasePool.h in Headers */,
 				CC47A00F148581E9002CCDAB /* FMDatabaseQueue.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8791221F793EFE0084D8C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE8791341F793FAD0084D8C9 /* FMDB.h in Headers */,
+				FE8791351F793FAD0084D8C9 /* FMDatabase.h in Headers */,
+				FE8791361F793FAD0084D8C9 /* FMResultSet.h in Headers */,
+				FE8791371F793FAD0084D8C9 /* FMDatabaseQueue.h in Headers */,
+				FE8791381F793FAD0084D8C9 /* FMDatabaseAdditions.h in Headers */,
+				FE8791391F793FAD0084D8C9 /* FMDatabasePool.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -546,6 +597,24 @@
 			productReference = EE4290EF12B42F870088BD94 /* libFMDB.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		FE8791241F793EFE0084D8C9 /* FMDB watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE87912A1F793EFE0084D8C9 /* Build configuration list for PBXNativeTarget "FMDB watchOS" */;
+			buildPhases = (
+				FE8791201F793EFE0084D8C9 /* Sources */,
+				FE8791211F793EFE0084D8C9 /* Frameworks */,
+				FE8791221F793EFE0084D8C9 /* Headers */,
+				FE8791231F793EFE0084D8C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FMDB watchOS";
+			productName = "FMDB watchOS";
+			productReference = FE8791251F793EFE0084D8C9 /* FMDB_watchOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -562,6 +631,10 @@
 					};
 					BF5D041518416BB2008C5AA9 = {
 						TestTargetID = EE4290EE12B42F870088BD94;
+					};
+					FE8791241F793EFE0084D8C9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -586,6 +659,7 @@
 				6290CBB4188FE836009790F8 /* FMDB-IOS */,
 				83C73EFD1C326AB000FFC730 /* FMDB iOS */,
 				83C73F0A1C326ADA00FFC730 /* FMDB MacOS */,
+				FE8791241F793EFE0084D8C9 /* FMDB watchOS */,
 			);
 		};
 /* End PBXProject section */
@@ -610,6 +684,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5D041F18416BB2008C5AA9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8791231F793EFE0084D8C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,6 +776,18 @@
 				EE42910A12B42FD20088BD94 /* FMResultSet.m in Sources */,
 				CC9E4EBB13B31188005F9210 /* FMDatabasePool.m in Sources */,
 				CC47A011148581E9002CCDAB /* FMDatabaseQueue.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FE8791201F793EFE0084D8C9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE87912E1F793F4E0084D8C9 /* FMResultSet.m in Sources */,
+				FE87912D1F793F4A0084D8C9 /* FMDatabase.m in Sources */,
+				FE8791311F793F570084D8C9 /* FMDatabasePool.m in Sources */,
+				FE87912F1F793F510084D8C9 /* FMDatabaseQueue.m in Sources */,
+				FE8791301F793F540084D8C9 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1170,6 +1263,116 @@
 			};
 			name = Release;
 		};
+		FE87912B1F793EFE0084D8C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FMDB watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.billchan.FMDB-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		FE87912C1F793EFE0084D8C9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "FMDB watchOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.billchan.FMDB-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1232,6 +1435,15 @@
 			buildConfigurations = (
 				EE4290F012B42F880088BD94 /* Debug */,
 				EE4290F112B42F880088BD94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE87912A1F793EFE0084D8C9 /* Build configuration list for PBXNativeTarget "FMDB watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE87912B1F793EFE0084D8C9 /* Debug */,
+				FE87912C1F793EFE0084D8C9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
